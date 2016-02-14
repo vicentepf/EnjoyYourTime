@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainMenuFragment"
+    android:background="#dbfff0"
+    android:focusable="false"
+    android:id="@+id/main_menu_layout">
+
+    <TextView android:text="@string/main_menu_header" android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_title_main_menu"
+        android:autoText="false"
+        android:allowUndo="false"
+        android:textSize="25dp"
+        android:background="#ffc056"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal|top"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:longClickable="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/yoda_button"
+        android:src="@drawable/yoda_icon"
+        android:longClickable="false"
+        android:baselineAlignBottom="false"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_below="@+id/name_affinity_button"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/name_affinity_button"
+        android:src="@drawable/name_love_compatibility_icon"
+        android:longClickable="false"
+        android:baselineAlignBottom="false"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/coming_soon"
+        android:id="@+id/textView_coming_soon"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
